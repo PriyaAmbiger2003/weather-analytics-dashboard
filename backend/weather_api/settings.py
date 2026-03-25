@@ -12,7 +12,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']  # allow localhost and frontend
 
-# Application definition
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -20,12 +20,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # Third-party
     'rest_framework',
     'corsheaders',
-
-    # Local apps
     'weather',
 ]
 
@@ -68,8 +64,7 @@ DATABASES = {
     }
 }
 
-# You can switch to PostgreSQL easily later:
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -80,7 +75,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-"""
+
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
